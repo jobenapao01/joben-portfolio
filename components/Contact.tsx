@@ -32,7 +32,7 @@ const Contact: FC<ContactProps> = ({}) => {
                 <p className="text-gray-400">Frontend Developer</p>
                 <p className="py-4 tracking-wider">
                   I am available for freelance or full-time positions. Contact
-                  me and let's talk.
+                  me and lets talk.
                 </p>
               </div>
 
