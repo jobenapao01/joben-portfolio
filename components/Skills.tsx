@@ -1,5 +1,13 @@
 import Image from "next/image";
 import { FC } from "react";
+import nextImg from "@/public/assets/skills/nextjs.png";
+import reactImg from "@/public/assets/skills/react.png";
+import nodeImg from "@/public/assets/skills/node.png";
+import mongoImg from "@/public/assets/skills/mongo.png";
+import tailwindImg from "@/public/assets/skills/tailwind.png";
+import htmlImg from "@/public/assets/skills/html.png";
+import cssImg from "@/public/assets/skills/css.png";
+import githubImg from "@/public/assets/skills/github1.png";
 
 interface SkillsProps {}
 
@@ -15,12 +23,7 @@ const Skills: FC<SkillsProps> = ({}) => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/nextjs.png"
-                  alt="/"
-                  width={64}
-                  height={64}
-                />
+                <Image src={nextImg} alt="/" width={64} height={64} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>NextJs</h3>
@@ -31,12 +34,7 @@ const Skills: FC<SkillsProps> = ({}) => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/react.png"
-                  alt="/"
-                  width={64}
-                  height={64}
-                />
+                <Image src={reactImg} alt="/" width={64} height={64} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>ReactJs</h3>
@@ -47,12 +45,7 @@ const Skills: FC<SkillsProps> = ({}) => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/node.png"
-                  alt="/"
-                  width={64}
-                  height={64}
-                />
+                <Image src={nodeImg} alt="/" width={64} height={64} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>NodeJs</h3>
@@ -63,12 +56,7 @@ const Skills: FC<SkillsProps> = ({}) => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/mongo.png"
-                  alt="/"
-                  width={64}
-                  height={64}
-                />
+                <Image src={mongoImg} alt="/" width={64} height={64} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>MongoDB</h3>
@@ -79,12 +67,7 @@ const Skills: FC<SkillsProps> = ({}) => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/tailwind.png"
-                  alt="/"
-                  width={64}
-                  height={64}
-                />
+                <Image src={tailwindImg} alt="/" width={64} height={64} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>TailwindCSS</h3>
@@ -95,15 +78,32 @@ const Skills: FC<SkillsProps> = ({}) => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/github1.png"
-                  alt="/"
-                  width={64}
-                  height={64}
-                />
+                <Image src={githubImg} alt="/" width={64} height={64} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3>Github</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={htmlImg} alt="/" width={64} height={64} />
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h3>HTMl</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={cssImg} alt="/" width={64} height={64} />
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h3>CSS</h3>
               </div>
             </div>
           </div>

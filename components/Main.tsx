@@ -35,10 +35,14 @@ const Main: FC<MainProps> = ({}) => {
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition">
-              <FaLinkedinIn />
+              <a href="https://www.linkedin.com/feed/">
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition">
-              <FaGithub />
+              <a href="https://github.com/">
+                <FaGithub />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition">
               <AiOutlineMail />

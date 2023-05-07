@@ -43,10 +43,14 @@ const Contact: FC<ContactProps> = ({}) => {
                 <p className="uppercase pt-8 text-gray-500">Connect with me</p>
                 <div className="flex items-center justify-between max-w-[330px] py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition">
-                    <FaLinkedinIn />
+                    <a href="https://www.linkedin.com/feed/">
+                      <FaLinkedinIn />
+                    </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition">
-                    <FaGithub />
+                    <a href="https://github.com/">
+                      <FaGithub />
+                    </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition">
                     <AiOutlineMail />

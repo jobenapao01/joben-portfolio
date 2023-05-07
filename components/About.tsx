@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import myImg from "@/public/assets/joben.jpg";
 
 interface AboutProps {}
 
@@ -53,7 +54,7 @@ const About: FC<AboutProps> = ({}) => {
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 transition ">
           <Image
-            src="/../public/assets/joben.jpg"
+            src={myImg}
             alt="my picture"
             width={500}
             height={500}
