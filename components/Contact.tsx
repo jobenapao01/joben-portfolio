@@ -4,6 +4,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ContactProps {}
 
@@ -20,10 +21,12 @@ const Contact: FC<ContactProps> = ({}) => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
-                  className="rounded-xl hover:scale-105 ease-in duration-300 transition"
+                <Image
                   src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
-                  alt=""
+                  alt="/"
+                  width={500}
+                  height={500}
+                  className="rounded-xl hover:scale-105 ease-in duration-300 transition"
                 />
               </div>
 
