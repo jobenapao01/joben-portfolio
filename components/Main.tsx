@@ -37,12 +37,12 @@ const Main: FC<MainProps> = ({}) => {
 
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-							<a href='https://www.linkedin.com/feed/'>
+							<a href='https://www.linkedin.com/in/joben-apao-490220183/'>
 								<FaLinkedinIn />
 							</a>
 						</div>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-							<a href='https://github.com/'>
+							<a href='https://github.com/jobenapao01'>
 								<FaGithub />
 							</a>
 						</div>

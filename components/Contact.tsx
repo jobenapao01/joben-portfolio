@@ -108,12 +108,12 @@ const Contact: FC<ContactProps> = ({}) => {
 								<p className='uppercase pt-8 text-gray-500'>Connect with me</p>
 								<div className='flex items-center justify-between max-w-[330px] py-4'>
 									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-										<a href='https://www.linkedin.com/feed/'>
+										<a href='https://www.linkedin.com/in/joben-apao-490220183/'>
 											<FaLinkedinIn />
 										</a>
 									</div>
 									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-										<a href='https://github.com/'>
+										<a href='https://github.com/jobenapao01'>
 											<FaGithub />
 										</a>
 									</div>
@@ -179,21 +179,6 @@ const Contact: FC<ContactProps> = ({}) => {
 					</div>
 				</div>
 				<div className='flex justify-center py-12'>
-					{/* <Link
-            to="/"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={scrollToTop}
-          >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 transition">
-              <HiOutlineChevronDoubleUp
-                size={30}
-                className="m-auto text-[#5651e5]"
-              />
-            </div>
-          </Link> */}
 					<Link href='/'>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
 							<HiOutlineChevronDoubleUp

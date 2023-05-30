@@ -185,10 +185,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
 							{/* Icons */}
 							<div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
 								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 transition'>
-									<FaLinkedinIn />
+									<a href='https://www.linkedin.com/in/joben-apao-490220183/'>
+										<FaLinkedinIn />
+									</a>
 								</div>
 								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 transition'>
-									<FaGithub />
+									<a href='https://github.com/jobenapao01'>
+										<FaGithub />
+									</a>
 								</div>
 								<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 transition'>
 									<AiOutlineMail />
