@@ -11,7 +11,7 @@ import Image from 'next/image'
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = ({}) => {
-	const formRef = useRef()
+	const formRef = useRef(null)
 	const [form, setForm] = useState({
 		name: '',
 		email: '',
