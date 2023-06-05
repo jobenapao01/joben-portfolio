@@ -25,8 +25,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
 			router.asPath === '/hotelbnb' ||
 			router.asPath === '/tweety'
 		) {
-			setNavBg('transparent')
-			setLinkColor('#ecf0f3')
+			setNavBg('#ecf0f3')
+			setLinkColor('#1f2937')
 		} else {
 			setNavBg('#ecf0f3')
 			setLinkColor('#1f2937')
