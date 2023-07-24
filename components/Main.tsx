@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FC } from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsPersonLinesFill } from 'react-icons/bs'
@@ -12,7 +13,7 @@ const Main: FC<MainProps> = ({}) => {
 			id='home'>
 			<div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
 				<div>
-					<p className='uppercase text-sm tracking-widest text-gray-600'>
+					<p className='text-sm tracking-widest text-gray-600 uppercase'>
 						Lets Build Something Together
 					</p>
 					<h1 className='py-4 text-gray-700'>
@@ -26,7 +27,7 @@ const Main: FC<MainProps> = ({}) => {
 						I strive to create seamless user experiences that are both
 						aesthetically pleasing and intuitive.
 					</p>
-					<p className='py-4 text-gray-600 max-w-[70%]  m-auto text-justify'>
+					<p className='py-4 text-gray-600 max-w-[70%]  m-auto text-justify hidden sm:block'>
 						I believe that good design and development go hand in hand, and I am
 						committed to creating visually stunning and engaging websites that
 						are also optimized for performance and functionality. So take a look
@@ -36,20 +37,20 @@ const Main: FC<MainProps> = ({}) => {
 					</p>
 
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-							<a href='https://www.linkedin.com/in/joben-apao-490220183/'>
+						<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
+							<Link href='https://www.linkedin.com/in/joben-apao-490220183/' target='_blank'>
 								<FaLinkedinIn />
-							</a>
+							</Link>
 						</div>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-							<a href='https://github.com/jobenapao01'>
+						<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
+							<Link href='https://github.com/jobenapao01' target='_blank'>
 								<FaGithub />
-							</a>
+							</Link>
 						</div>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
+						<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
 							<AiOutlineMail />
 						</div>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
+						<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
 							<BsPersonLinesFill />
 						</div>
 					</div>

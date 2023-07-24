@@ -17,7 +17,7 @@ const hotelbnb = ({}) => {
 				<Image
 					src={bnbImg}
 					alt='bnb'
-					className='absolute z-1 object-cover'
+					className='absolute object-cover z-1'
 					fill
 				/>
 				<div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
@@ -41,27 +41,30 @@ const hotelbnb = ({}) => {
 						the properties that they have reserved.
 					</p>
 
-					<div className=' mt-6 '>
-						<a
+					<div className='mt-6 '>
+						<Link
 							href='https://hotelbnb.vercel.app/'
-							className='shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white hover:scale-105 duration-300 transition ease-linear px-8 py-2 mr-8'>
-							Demo
-						</a>
-						<a
+							target='_blank'
+							className='shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white  duration-300 transition ease-linear px-8 py-2 mr-8 hover:scale-110'>
+								Demo
+							
+						</Link>
+						<Link
 							href='https://github.com/jobenapao01/hotelbnb'
+							target='_blank'
 							className='shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white hover:scale-105 duration-300 transition ease-linear px-8 py-2'>
 							Code
-						</a>
+						</Link>
 					</div>
 
 					{/* <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button> */}
 				</div>
-				<div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
+				<div className='col-span-4 p-4 shadow-xl md:col-span-1 shadow-gray-400 rounded-xl'>
 					<div className='p-2'>
-						<p className='text-center font-bold pb-2'>Technologies</p>
+						<p className='pb-2 font-bold text-center'>Technologies</p>
 						<div className='grid grid-cols-3 md:grid-cols-1'>
-							<p className='flex text-gray-600 py-2 items-center gap-4'>
+							<p className='flex items-center gap-4 py-2 text-gray-600'>
 								<Image
 									src={nextJsImg}
 									alt='next'
@@ -72,7 +75,7 @@ const hotelbnb = ({}) => {
 								NextJs
 							</p>
 
-							<p className='flex text-gray-600 py-2 items-center gap-4'>
+							<p className='flex items-center gap-4 py-2 text-gray-600'>
 								<Image
 									src={tsImg}
 									alt='next'
@@ -83,7 +86,7 @@ const hotelbnb = ({}) => {
 								Typescript
 							</p>
 
-							<p className='flex text-gray-600 py-2 items-center gap-4'>
+							<p className='flex items-center gap-4 py-2 text-gray-600'>
 								<Image
 									src={tailwindImg}
 									alt='tailwind'
@@ -93,7 +96,7 @@ const hotelbnb = ({}) => {
 								/>
 								TailwindCSS
 							</p>
-							<p className='flex text-gray-600 py-2 items-center gap-4'>
+							<p className='flex items-center gap-4 py-2 text-gray-600'>
 								<Image
 									src={mongoImg}
 									alt='mongodb'
@@ -103,7 +106,7 @@ const hotelbnb = ({}) => {
 								/>
 								MongoDB
 							</p>
-							<p className='flex text-gray-600 py-2 items-center gap-4'>
+							<p className='flex items-center gap-4 py-2 text-gray-600'>
 								<Image
 									src={leafletImg}
 									alt='leaflet'
@@ -113,7 +116,7 @@ const hotelbnb = ({}) => {
 								/>
 								LeafletJs
 							</p>
-							<p className='flex text-gray-600 py-2 items-center gap-4'>
+							<p className='flex items-center gap-4 py-2 text-gray-600'>
 								<Image
 									src={cloudinaryImg}
 									alt='leaflet'

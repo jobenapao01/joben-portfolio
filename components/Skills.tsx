@@ -15,16 +15,16 @@ interface SkillsProps {}
 const Skills: FC<SkillsProps> = ({}) => {
 	return (
 		<div
-			className='w-full lg:h-screen p-2'
+			className='w-full p-2 lg:h-screen'
 			id='skills'>
 			<div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
 				<p className='text-xl tracking-widest uppercase text-[#5651e5] ml-2'>
 					Skills
 				</p>
 				<h2 className='py-4 ml-2'>What I Can Do</h2>
-				<div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+				<div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={nextImg}
@@ -33,14 +33,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>NextJs</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={reactImg}
@@ -49,14 +49,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>ReactJs</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={ts}
@@ -65,14 +65,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>Typescript</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={nodeImg}
@@ -81,14 +81,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>NodeJs</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={mongoImg}
@@ -97,14 +97,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>MongoDB</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={tailwindImg}
@@ -113,14 +113,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>TailwindCSS</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={githubImg}
@@ -129,14 +129,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>Github</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={htmlImg}
@@ -145,14 +145,14 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
-								<h3>HTMl</h3>
+							<div className='flex flex-col items-center justify-center'>
+								<h3>HTML</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 transition'>
-						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
+					<div className='p-6 transition duration-300 ease-in shadow-xl rounded-xl hover:scale-105'>
+						<div className='grid items-center justify-center grid-cols-2 gap-4'>
 							<div className='m-auto'>
 								<Image
 									src={cssImg}
@@ -161,7 +161,7 @@ const Skills: FC<SkillsProps> = ({}) => {
 									height={64}
 								/>
 							</div>
-							<div className='flex flex-col justify-center items-center'>
+							<div className='flex flex-col items-center justify-center'>
 								<h3>CSS</h3>
 							</div>
 						</div>

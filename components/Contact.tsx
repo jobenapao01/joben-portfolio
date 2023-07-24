@@ -40,16 +40,16 @@ const Contact: FC<ContactProps> = ({}) => {
 
 		emailjs
 			.send(
-				'service_pvwkgl3',
-				'template_l9q1c5v',
+				'service_d3y3d44',
+				'template_4e2rzeo',
 				{
 					from_name: form.name,
 					to_name: 'Joben',
 					from_email: form.email,
-					to_email: 'jobenapao10@gmail.com',
+					to_email: 'work.jobenapao@gmail.com',
 					message: form.message,
 				},
-				'sQ-JkmBp-qNBSpzSO'
+				'EL89KnRJQitmqH_LE'
 			)
 			.then(
 				() => {
@@ -64,7 +64,7 @@ const Contact: FC<ContactProps> = ({}) => {
 						message: '',
 					})
 				},
-				(error) => {
+				(error:any) => {
 					setLoading(false)
 					console.log(error)
 					toast.error('Something went wrong', { id: 'error' })
@@ -81,17 +81,17 @@ const Contact: FC<ContactProps> = ({}) => {
 					Contact
 				</p>
 				<h2 className='py-4 ml-2'>Get In Touch</h2>
-				<div className='grid lg:grid-cols-5 gap-8'>
+				<div className='grid gap-8 lg:grid-cols-5'>
 					{/* Left */}
-					<div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-						<div className='lg:p-4 h-full'>
+					<div className='w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl'>
+						<div className='h-full lg:p-4'>
 							<div>
 								<Image
 									src='https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80'
 									alt='/'
 									width={500}
 									height={500}
-									className='rounded-xl hover:scale-105 ease-in duration-300 transition'
+									className='transition duration-300 ease-in rounded-xl hover:scale-105'
 								/>
 							</div>
 
@@ -105,22 +105,22 @@ const Contact: FC<ContactProps> = ({}) => {
 							</div>
 
 							<div>
-								<p className='uppercase pt-8 text-gray-500'>Connect with me</p>
+								<p className='pt-8 text-gray-500 uppercase'>Connect with me</p>
 								<div className='flex items-center justify-between max-w-[330px] py-4'>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-										<a href='https://www.linkedin.com/in/joben-apao-490220183/'>
+									<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
+										<Link href='https://www.linkedin.com/in/joben-apao-490220183/' target='_blank'>
 											<FaLinkedinIn />
-										</a>
+										</Link>
 									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
-										<a href='https://github.com/jobenapao01'>
+									<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
+										<Link href='https://github.com/jobenapao01' target='_blank'>
 											<FaGithub />
-										</a>
+										</Link>
 									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
+									<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
 										<AiOutlineMail />
 									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
+									<div className='p-6 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110'>
 										<BsPersonLinesFill />
 									</div>
 								</div>
@@ -129,16 +129,16 @@ const Contact: FC<ContactProps> = ({}) => {
 					</div>
 
 					{/* Right */}
-					<div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+					<div className='w-full h-auto col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
 						<div className='p-4'>
 							<form
 								ref={formRef}
 								onSubmit={handleSubmit}>
 								<div className='flex flex-col py-2'>
-									<label className='text-sm py-2 uppercase'>Name</label>
+									<label className='py-2 text-sm uppercase'>Name</label>
 									<input
 										type='text'
-										className='border-2 rounded-lg p-3 flex border-gray-300'
+										className='flex p-3 border-2 border-gray-300 rounded-lg'
 										name='name'
 										value={form.name}
 										onChange={handleChange}
@@ -147,10 +147,10 @@ const Contact: FC<ContactProps> = ({}) => {
 								</div>
 
 								<div className='flex flex-col py-2'>
-									<label className='text-sm py-2 uppercase'>Email</label>
+									<label className='py-2 text-sm uppercase'>Email</label>
 									<input
 										type='email'
-										className='border-2 rounded-lg p-3 flex border-gray-300'
+										className='flex p-3 border-2 border-gray-300 rounded-lg'
 										name='email'
 										value={form.email}
 										onChange={handleChange}
@@ -159,7 +159,7 @@ const Contact: FC<ContactProps> = ({}) => {
 								</div>
 
 								<div className='flex flex-col py-2'>
-									<label className='text-sm py-2 uppercase'>Message</label>
+									<label className='py-2 text-sm uppercase'>Message</label>
 
 									<textarea
 										rows={7}
@@ -167,11 +167,11 @@ const Contact: FC<ContactProps> = ({}) => {
 										value={form.message}
 										onChange={handleChange}
 										placeholder='What do you want to say?'
-										className='border-2 rounded-lg p-3 border-gray-300'
+										className='p-3 border-2 border-gray-300 rounded-lg'
 									/>
 								</div>
 
-								<button className='uppercase w-full p-4 text-gray-100 mt-4'>
+								<button className='w-full p-4 mt-4 text-gray-100 uppercase'>
 									{loading ? 'Sending...' : 'Send Message'}
 								</button>
 							</form>
@@ -180,12 +180,13 @@ const Contact: FC<ContactProps> = ({}) => {
 				</div>
 				<div className='flex justify-center py-12'>
 					<Link href='/'>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 transition'>
+						<div className='p-4 transition duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 animate-bounce'>
 							<HiOutlineChevronDoubleUp
 								size={30}
 								className='m-auto text-[#5651e5]'
 							/>
 						</div>
+					
 					</Link>
 				</div>
 			</div>

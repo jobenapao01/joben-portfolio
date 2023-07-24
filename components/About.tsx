@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { FC } from "react";
-import myImg from "@/public/assets/joben.jpg";
+import myImg from "@/public/assets/joben2.jpg";
+import Link from "next/link";
 
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16" id="about">
+    <div className="flex items-center w-full p-2 py-16 md:h-screen" id="about">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 text-justify">
           <p className="uppercase text-xl tracking-widest text-[#5651e5] ml-2">
@@ -48,11 +49,13 @@ const About: FC<AboutProps> = ({}) => {
             to hearing from you!
           </p>
 
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto text-justify">
+          <Link href='#projects'>
+          <p className="py-4 max-w-[70%] m-auto text-justify text-[#5651e5] animate-bounce ">
             Check out some of my works.
           </p>
+          </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 transition ">
+        <div className="items-center justify-center hidden w-full h-auto p-4 m-auto transition duration-300 ease-in shadow-xl shadow-gray-400 rounded-xl hover:scale-105 md:block">
           <Image
             src={myImg}
             alt="my picture"
